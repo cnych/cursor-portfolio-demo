@@ -6,23 +6,23 @@ const socialLinks = [
   {
     name: 'GitHub',
     href: 'https://github.com/yourusername',
-    icon: Github,
+    icon: Github
   },
   {
     name: 'LinkedIn',
     href: 'https://linkedin.com/in/yourusername',
-    icon: Linkedin,
+    icon: Linkedin
   },
   {
     name: 'Twitter',
     href: 'https://twitter.com/yourusername',
-    icon: Twitter,
+    icon: Twitter
   },
   {
     name: 'Email',
     href: 'mailto:your@email.com',
-    icon: Mail,
-  },
+    icon: Mail
+  }
 ]
 
 const HeroSection = () => {
@@ -61,4 +61,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection 
+export default HeroSection

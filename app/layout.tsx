@@ -8,11 +8,11 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: '个人项目展示',
-  description: '展示个人独立开发的项目集合',
+  description: '展示个人独立开发的项目集合'
 }
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode
 }) {

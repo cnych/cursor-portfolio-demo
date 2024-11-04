@@ -10,7 +10,7 @@ const Header = () => {
   
   const navItems = [
     { name: '首页', path: '/' },
-    { name: '项目', path: '/apps' },
+    { name: '项目', path: '/apps' }
   ]
 
   return (

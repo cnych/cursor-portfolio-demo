@@ -6,13 +6,9 @@ import ProjectGallery from '@/components/apps/project-detail/project-gallery'
 import ProjectTechStack from '@/components/apps/project-detail/project-tech-stack'
 import { projects } from '@/data/projects'
 
-interface ProjectPageProps {
-  params: {
-    id: string
-  }
-}
+type Params = Promise<{ id: string }>
 
-export default async function ProjectPage({ params }: ProjectPageProps) {
+export default async function ProjectPage({ params }: { params: Params }) {
   const { id } = await params
   const project = projects.find(p => p.id === id)
 
@@ -29,3 +25,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     </Container>
   )
 } 
+
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id
+  }))
+}

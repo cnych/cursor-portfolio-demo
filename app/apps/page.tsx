@@ -5,7 +5,7 @@ import { ProjectFilterProvider } from '@/contexts/project-filter-context'
 
 export const metadata = {
   title: '项目列表 - Portfolio',
-  description: '展示所有个人独立开发的项目',
+  description: '展示所有个人独立开发的项目'
 }
 
 export default function ProjectsPage() {
