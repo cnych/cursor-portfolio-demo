@@ -1,4 +1,5 @@
 import Container from './container'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -6,25 +7,25 @@ const Footer = () => {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} <a href="/" className="hover:text-foreground">AppGenius</a>. All rights reserved.
+            © {new Date().getFullYear()} <Link href="/" className="hover:text-foreground">AppGenius</Link>. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <a
+            <Link
               href="https://github.com/cnych"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
               GitHub
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://x.com/appgeniusxyz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
               Twitter
-            </a>
+            </Link>
           </div>
         </div>
       </Container>
@@ -32,4 +33,4 @@ const Footer = () => {
   )
 }
 
-export default Footer 
+export default Footer
