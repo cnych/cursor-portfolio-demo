@@ -11,7 +11,9 @@ const skills = [
       { name: "Next.js", level: "精通" },
       { name: "TypeScript", level: "精通" },
       { name: "Tailwind CSS", level: "精通" },
+      { name: "Shadcn UI", level: "精通" },
       { name: "Redux", level: "熟练" },
+      { name: "Ant Design", level: "熟练" },
       { name: "Vue.js", level: "熟练" }
     ]
   },
@@ -20,12 +22,14 @@ const skills = [
     icon: Database,
     description: "设计和实现可扩展的服务端应用和 API",
     items: [
+      { name: "Python", level: "精通" },
+      { name: "Golang", level: "精通" },
       { name: "Node.js", level: "精通" },
-      { name: "Express", level: "精通" },
+      { name: "MySQL", level: "精通" },
       { name: "PostgreSQL", level: "熟练" },
       { name: "MongoDB", level: "熟练" },
-      { name: "GraphQL", level: "熟练" },
-      { name: "Docker", level: "熟练" }
+      { name: "Docker", level: "熟练" },
+      { name: "Kubernetes", level: "精通" }
     ]
   },
   {
@@ -35,6 +39,7 @@ const skills = [
     items: [
       { name: "Git", level: "精通" },
       { name: "VS Code", level: "精通" },
+      { name: "Cursor", level: "精通" },
       { name: "Webpack", level: "熟练" },
       { name: "Vite", level: "熟练" },
       { name: "Figma", level: "熟练" },
@@ -45,7 +50,7 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 bg-muted/50">
+    <section className="py-20">
       <Container>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tight mb-4">

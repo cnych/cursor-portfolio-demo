@@ -1,5 +1,5 @@
 import { Project } from '@/types/project'
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Blocks, Github } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 interface ProjectHeaderProps {
@@ -16,11 +16,19 @@ const ProjectHeader = ({ project }: ProjectHeaderProps) => {
         {project.description}
       </p>
       <div className="flex gap-4">
-        {project.demoUrl && (
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+        {project.homeUrl && (
+          <a href={project.homeUrl} target="_blank" rel="noopener noreferrer">
             <Button className="gap-2">
               <ExternalLink className="h-4 w-4" />
-              在线演示
+              应用主页
+            </Button>
+          </a>
+        )}
+        {project.appUrl && (
+          <a href={project.appUrl} target="_blank" rel="noopener noreferrer">
+            <Button className="gap-2">
+              <Blocks className="h-4 w-4" />
+              安装应用
             </Button>
           </a>
         )}

@@ -5,9 +5,11 @@ export interface Project {
   image: string
   images: string[]
   technologies: string[]
+  content: string
   category: string
-  demoUrl?: string
+  homeUrl?: string
   githubUrl?: string
+  appUrl?: string
   createdAt: string
   features?: string[]
   experience?: string

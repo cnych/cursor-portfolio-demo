@@ -19,9 +19,9 @@ export default async function ProjectPage({ params }: { params: Params }) {
   return (
     <Container className="py-20">
       <ProjectHeader project={project} />
+      <ProjectTechStack technologies={project.technologies} />
       <ProjectGallery images={project.images} />
       <ProjectContent project={project} />
-      <ProjectTechStack technologies={project.technologies} />
     </Container>
   )
 } 

@@ -8,7 +8,7 @@ interface ProjectCardProps {
   description: string
   image: string
   technologies: string[]
-  demoUrl?: string
+  homeUrl?: string
   githubUrl?: string
 }
 
@@ -18,22 +18,26 @@ const ProjectCard = ({
   description, 
   image, 
   technologies,
-  demoUrl,
+  homeUrl,
   githubUrl 
 }: ProjectCardProps) => {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-lg border bg-background p-6 hover:shadow-lg transition-all">
-      <div className="relative aspect-video overflow-hidden rounded-md">
+    <div className="group relative flex flex-col overflow-hidden rounded-lg border shadow-sm bg-background p-6 hover:shadow-lg transition-all">
+      <Link href={`/apps/${id}`} className="relative aspect-video overflow-hidden rounded-md">
         <Image
           src={image}
           alt={title}
           fill
           className="object-cover transition-transform group-hover:scale-105"
         />
-      </div>
+      </Link>
       <div className="flex flex-col gap-2 pt-4">
-        <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
+        <Link href={`/apps/${id}`}>
+          <h3 className="text-xl font-semibold">{title}</h3>
+        </Link>
+        <Link href={`/apps/${id}`}>
+          <p className="text-sm text-muted-foreground line-clamp-2">{description}</p>
+        </Link>
         <div className="flex flex-wrap gap-2 mt-2">
           {technologies.map((tech) => (
             <span
@@ -45,15 +49,15 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="mt-4 flex gap-3">
-          {demoUrl && (
+          {homeUrl && (
             <a
-              href={demoUrl}
+              href={homeUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
             >
               <ExternalLink className="h-4 w-4" />
-              演示
+              应用主页
             </a>
           )}
           {githubUrl && (

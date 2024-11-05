@@ -18,8 +18,9 @@ const Header = () => {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-6">
-            <Link href="/" className="text-xl font-bold">
-              Portfolio
+            <Link href="/" className="flex items-center gap-2" title="AppGenius工作室">
+              <img src="/AppGeniusLogo.svg" alt="AppGenius Logo" className="h-16 w-auto" />
+              <span className="font-bold ml-[-10px] text-lg font-mono tracking-wider text-primary">AppGenius</span>
             </Link>
             <nav className="flex gap-6">
               {navItems.map((item) => (

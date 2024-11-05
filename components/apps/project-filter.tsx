@@ -7,6 +7,8 @@ import { useProjectFilter } from '@/contexts/project-filter-context'
 
 const categories = [
   '全部',
+  '知识付费',
+  'Chrome插件',
   'Web应用',
   '移动应用',
   '开源项目',

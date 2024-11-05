@@ -6,11 +6,11 @@ const Footer = () => {
       <Container>
         <div className="flex h-16 items-center justify-between">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Portfolio. All rights reserved.
+            © {new Date().getFullYear()} <a href="/" className="hover:text-foreground">AppGenius</a>. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/cnych"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground"
@@ -18,12 +18,12 @@ const Footer = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://x.com/appgeniusxyz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-foreground"
             >
-              LinkedIn
+              Twitter
             </a>
           </div>
         </div>

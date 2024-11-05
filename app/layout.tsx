@@ -7,8 +7,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '个人项目展示',
-  description: '展示个人独立开发的项目集合'
+  title: 'AppGenius工作室 ｜ 视频课程、AI应用、Web应用、浏览器插件、移动应用',
+  description: '专注于开发高质量的视频课程、AI应用、Web应用、浏览器插件、移动应用和开源项目的独立工作室'
 }
 
 export default function RootLayout({
@@ -23,7 +23,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
           <div className="relative min-h-screen flex flex-col">
             <Header />
